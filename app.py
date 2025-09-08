@@ -29,8 +29,8 @@ from langchain.chains import RetrievalQA
 ## Bedrock clients
 
 bedrock = boto3.client(service_name="bedrock-runtime",
-        aws_access_key_id="AKIATNRWB2SEVZXJIGUF",
-        aws_secret_access_key="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",
+        aws_access_key_id="AWS_Access_Key_ID",
+        aws_secret_access_key="Secret_key",
         region_name="us-east-1",
 )
 bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1",client=bedrock)
